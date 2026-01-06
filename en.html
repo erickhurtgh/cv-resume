@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Erick Merari Hurtado Gallardo (English)</title>
+    <style>
+        /* ESTILOS IDÉNTICOS */
+        :root { --primary-color: #003366; --secondary-color: #2c3e50; --accent-color: #e74c3c; --bg-color: #f4f7f6; --text-color: #333; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: var(--white); padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; position: relative; }
+        
+        /* BOTÓN DE IDIOMA */
+        .lang-switch { position: absolute; top: 20px; right: 20px; }
+        .lang-btn { text-decoration: none; background: #eee; padding: 8px 15px; border-radius: 20px; color: #333; font-weight: bold; border: 1px solid #ccc; transition: all 0.3s; display: flex; align-items: center; gap: 5px; }
+        .lang-btn:hover { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+        header { border-bottom: 2px solid var(--primary-color); padding-bottom: 20px; margin-bottom: 30px; margin-top: 20px;}
+        h1 { color: var(--primary-color); margin: 0; font-size: 2.2em; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle { font-size: 1.2em; color: var(--accent-color); font-weight: bold; margin-top: 5px; }
+        .contact-info { margin-top: 15px; font-size: 0.95em; color: var(--secondary-color); }
+        .contact-info span { margin-right: 15px; display: inline-block; }
+        h2 { color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 10px; margin-top: 30px; font-size: 1.4em; text-transform: uppercase; }
+        .job { margin-bottom: 25px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: bold; font-size: 1.1em; color: var(--secondary-color); }
+        .company { font-weight: bold; color: var(--primary-color); }
+        .date { font-style: italic; color: #666; font-size: 0.9em; }
+        ul { list-style-type: square; margin-top: 10px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .skill-item { background: #f9f9f9; padding: 10px; border-radius: 4px; border-left: 3px solid var(--secondary-color); }
+        .no-print { text-align: center; margin-top: 40px; }
+        .print-btn { background-color: var(--primary-color); color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        .print-btn:hover { background-color: #002244; }
+        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.8em; } .job-header { flex-direction: column; } .lang-switch { position: static; margin-bottom: 15px; text-align: right; } .lang-btn { display: inline-flex; }}
+        @media print { body { background-color: white; padding: 0; } .container { box-shadow: none; max-width: 100%; margin: 0; padding: 0; } .no-print, .lang-switch { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switch">
+        <a href="index.html" class="lang-btn">🇲🇽 Versión en Español</a>
+    </div>
+
+    <header>
+        <h1>Erick Merari Hurtado Gallardo</h1>
+        <div class="subtitle">ATM Support Specialist & Technical Coordinator (Dispatch)</div>
+        <div class="contact-info">
+            <span>📍 Mexico City, MX</span>
+            <span>📞 +52 56 4918 9930</span>
+            <span>✉️ erickhurt1@gmail.com</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>IT Professional with over 15 years of experience, specializing in the complete service lifecycle for ATMs and Point of Sale (POS) systems. Expert in Level 2 technical diagnosis, ticket management (Dispatch), and field engineering coordination. Proven track record of reducing Mean Time to Repair (MTTR) and meeting Service Level Agreements (SLAs) through efficient support strategies.</p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>ATM Technology:</strong> Diebold Nixdorf, Wincor, NCR, Triton (HW/SW components).</div>
+            <div class="skill-item"><strong>Service Management (Dispatch):</strong> Ticket lifecycle, SLA compliance, Route planning, Evidence control.</div>
+            <div class="skill-item"><strong>Technical Support:</strong> Level 2 Diagnosis, Imaging, Cloning, Component repair.</div>
+            <div class="skill-item"><strong>Networking:</strong> Cisco basic config, Teldat, VOIP, Routing templates.</div>
+            <div class="skill-item"><strong>Systems:</strong> Windows (7/10/IoT), Windows Server, Linux.</div>
+            <div class="skill-item"><strong>Leadership:</strong> Team training and remote support for field engineers.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Corporativo Santander</span> | <span class="job-title">Technical Support & Implementation Engineer</span></div>
+                <span class="date">Jan 2025 – Aug 2025</span>
+            </div>
+            <ul>
+                <li>Managed the lifecycle of technological assets and service tickets for corporate users and developers, ensuring operational continuity.</li>
+                <li>Administered identity infrastructure (Active Directory/Azure), ensuring correct permission assignment and security compliance.</li>
+                <li>Maintained hardware inventory control and optimization, ensuring equipment traceability (evidence management), critical for asset management.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Diebold Nixdorf</span> | <span class="job-title">Repair Engineer & Team Lead</span></div>
+                <span class="date">May 2022 – Jan 2025</span>
+            </div>
+            <ul>
+                <li><strong>Reduced Mean Time to Repair (MTTR) by 20%</strong> through the implementation of new diagnostic tools and process standardization.</li>
+                <li>Trained and supervised a team of 5 technicians, elevating the technical competence of the squad and improving field response times.</li>
+                <li>Executed advanced diagnostics for electronic and mechanical failures in Diebold and Wincor ATMs, acting as Level 2 support for complex incidents.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Informática Empresarial / Liderek</span> | <span class="job-title">Specialized Technical Support (Field)</span></div>
+                <span class="date">Aug 2019 – Apr 2022</span>
+            </div>
+            <ul>
+                <li><strong>Increased client satisfaction by 20%</strong> through effective resolution of incidents in ATMs (Wincor, Diebold, Triton, NCR) and Cisco communications equipment.</li>
+                <li>Coordinated setup and software configuration for new equipment, ensuring installation standards and photographic evidence compliance.</li>
+                <li>Managed preventive and corrective maintenance, ensuring ATM network availability and minimizing operational downtime.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Wincor Nixdorf</span> | <span class="job-title">Retail Support & L2 Dispatch Support</span></div>
+                <span class="date">Jan 2008 – Jan 2012</span>
+            </div>
+            <ul>
+                <li>Acted as Technical Liaison (Dispatch/L2), providing phone support to field engineering for real-time HW/SW incident resolution.</li>
+                <li>Coordinated the preparation of IT resources for pre-sales projects and massive deployments for retail clients.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education & Certifications</h2>
+        <ul>
+            <li><strong>Computer Systems Engineering (Undergraduate Coursework)</strong> - UNITEC</li>
+            <li><strong>Python & JavaScript Certification</strong> (2024 - Present)</li>
+            <li>Courses: SQL Databases, Web Design (HTML/CSS), Laptop Maintenance.</li>
+        </ul>
+    </section>
+
+    <div class="no-print">
+        <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+</div>
+</body>
+</html>

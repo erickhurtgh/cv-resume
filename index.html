@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Erick Merari Hurtado Gallardo</title>
+    <style>
+        /* ESTILOS IGUALES AL ANTERIOR + BOTÓN DE IDIOMA */
+        :root { --primary-color: #003366; --secondary-color: #2c3e50; --accent-color: #e74c3c; --bg-color: #f4f7f6; --text-color: #333; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: var(--white); padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; position: relative; }
+        
+        /* BOTÓN DE IDIOMA */
+        .lang-switch { position: absolute; top: 20px; right: 20px; }
+        .lang-btn { text-decoration: none; background: #eee; padding: 8px 15px; border-radius: 20px; color: #333; font-weight: bold; border: 1px solid #ccc; transition: all 0.3s; display: flex; align-items: center; gap: 5px; }
+        .lang-btn:hover { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+        header { border-bottom: 2px solid var(--primary-color); padding-bottom: 20px; margin-bottom: 30px; margin-top: 20px;}
+        h1 { color: var(--primary-color); margin: 0; font-size: 2.2em; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle { font-size: 1.2em; color: var(--accent-color); font-weight: bold; margin-top: 5px; }
+        .contact-info { margin-top: 15px; font-size: 0.95em; color: var(--secondary-color); }
+        .contact-info span { margin-right: 15px; display: inline-block; }
+        h2 { color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 10px; margin-top: 30px; font-size: 1.4em; text-transform: uppercase; }
+        .job { margin-bottom: 25px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: bold; font-size: 1.1em; color: var(--secondary-color); }
+        .company { font-weight: bold; color: var(--primary-color); }
+        .date { font-style: italic; color: #666; font-size: 0.9em; }
+        ul { list-style-type: square; margin-top: 10px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .skill-item { background: #f9f9f9; padding: 10px; border-radius: 4px; border-left: 3px solid var(--secondary-color); }
+        .no-print { text-align: center; margin-top: 40px; }
+        .print-btn { background-color: var(--primary-color); color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        .print-btn:hover { background-color: #002244; }
+        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.8em; } .job-header { flex-direction: column; } .lang-switch { position: static; margin-bottom: 15px; text-align: right; } .lang-btn { display: inline-flex; }}
+        @media print { body { background-color: white; padding: 0; } .container { box-shadow: none; max-width: 100%; margin: 0; padding: 0; } .no-print, .lang-switch { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switch">
+        <a href="en.html" class="lang-btn">🇺🇸 English Version</a>
+    </div>
+
+    <header>
+        <h1>Erick Merari Hurtado Gallardo</h1>
+        <div class="subtitle">Especialista en Soporte de ATMs y Coordinación Técnica (Dispatch)</div>
+        <div class="contact-info">
+            <span>📍 Ciudad de México, CDMX</span>
+            <span>📞 +52 56 4918 9930</span>
+            <span>✉️ erickhurt1@gmail.com</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Resumen Profesional</h2>
+        <p>Profesional con más de 15 años de experiencia en TI, especializado en el ciclo de vida completo de servicios para cajeros automáticos (ATMs) y puntos de venta. Experto en diagnóstico técnico (Nivel 2), gestión de tickets y coordinación de ingeniería en campo. Historial comprobado de reducción de tiempos de reparación (MTTR) y cumplimiento de SLAs.</p>
+    </section>
+
+    <section>
+        <h2>Competencias Nucleares</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>Tecnología ATM:</strong> Diebold Nixdorf, Wincor, NCR, Triton (HW/SW).</div>
+            <div class="skill-item"><strong>Dispatch & Gestión:</strong> Ciclo de tickets, SLAs, Rutas, Evidencias.</div>
+            <div class="skill-item"><strong>Soporte Técnico:</strong> Diagnóstico Nivel 2, Clonación, Imágenes.</div>
+            <div class="skill-item"><strong>Redes:</strong> Configuración Cisco, Teldat, VOIP.</div>
+            <div class="skill-item"><strong>Sistemas:</strong> Windows (7/10/IoT), Server, Linux.</div>
+            <div class="skill-item"><strong>Liderazgo:</strong> Capacitación y soporte remoto a técnicos.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Profesional</h2>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Corporativo Santander</span> | <span class="job-title">Ingeniero de Soporte Técnico e Implementación</span></div>
+                <span class="date">Ene 2025 – Ago 2025</span>
+            </div>
+            <ul>
+                <li>Gestioné el ciclo de vida de activos tecnológicos y tickets de servicio para usuarios corporativos y desarrolladores.</li>
+                <li>Administré la infraestructura de identidad (Active Directory/Azure), garantizando seguridad y accesos.</li>
+                <li>Mantuve el control y optimización del inventario de hardware, asegurando la trazabilidad de equipos.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Diebold Nixdorf</span> | <span class="job-title">Ingeniero de Reparaciones y Líder de Equipo</span></div>
+                <span class="date">May 2022 – Ene 2025</span>
+            </div>
+            <ul>
+                <li><strong>Reduje en un 20% el tiempo promedio de reparación (MTTR)</strong> mediante nuevas herramientas de diagnóstico.</li>
+                <li>Capacité y supervisé a un equipo de 5 técnicos, elevando el nivel de competencia técnica.</li>
+                <li>Ejecuté diagnósticos avanzados de fallas electrónicas/mecánicas como soporte de segundo nivel.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Informática Empresarial / Liderek</span> | <span class="job-title">Soporte Técnico Especializado</span></div>
+                <span class="date">Ago 2019 – Abr 2022</span>
+            </div>
+            <ul>
+                <li><strong>Aumenté la satisfacción del cliente en un 20%</strong> mediante resolución efectiva en ATMs y Cisco.</li>
+                <li>Coordiné la puesta a punto y configuración de software para equipos nuevos con evidencia fotográfica.</li>
+                <li>Gestioné mantenimiento preventivo/correctivo minimizando el tiempo de inactividad.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div><span class="company">Wincor Nixdorf</span> | <span class="job-title">Soporte Retail y Soporte Nivel 2</span></div>
+                <span class="date">Ene 2008 – Ene 2012</span>
+            </div>
+            <ul>
+                <li>Actué como enlace técnico (Dispatch/L2) apoyando a ingeniería en campo para incidencias HW/SW.</li>
+                <li>Coordiné preparación de recursos informáticos para despliegues masivos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación y Certificaciones</h2>
+        <ul>
+            <li><strong>Ingeniería en Sistemas Computacionales (Trunca)</strong> - UNITEC</li>
+            <li><strong>Certificación en Python y JavaScript</strong> (2024 - Actualidad)</li>
+            <li>Cursos: Bases de datos SQL, Diseño Web (HTML/CSS), Mantenimiento de Laptops.</li>
+        </ul>
+    </section>
+
+    <div class="no-print">
+        <button class="print-btn" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button>
+    </div>
+</div>
+</body>
+</html>
